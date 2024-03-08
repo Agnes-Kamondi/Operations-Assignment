@@ -4,12 +4,9 @@ let result = a.substr(8,12);
 console.log('item',{result});
 
 //Insert the following string at the fourth index of the below variable:"eat"const food = "The quick fox jumped over the lazy dog"
-const food = `The quick fox jumped over the lazy dog`
-console.log("index",food[4]);
-const stringToInsert = "eat"
-const indexToInsertAt = 4;
-const newString = food.slice(4,indexToInsertAt) + food.slice(indexToInsertAt);
-console.log({newString});
+let food = `The quick fox jumped over the lazy dog`;
+food = food.slice(0,4) + "eat" + food.slice(4);
+console.log(food)
 
 //Count how many times the following string appears in the string variable:1. "the"2."brown"const story= "The quick brown fox jumps over the lazy dog"
 const story = "The quick brown fox jumps over the lazy dog"
